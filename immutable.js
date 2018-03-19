@@ -15,6 +15,16 @@
   Be sure to console.log() both references to ensure that they are pointing to different objects.
 */
 
+const person = {
+  name: 'Michael',
+  age: 26,
+  hometown: 'San Jose'
+};
+
+const newPerson = Object.assign({}, person);
+newPerson.name = 'Jose';
+newPerson.age = 30
+
 console.log(person);
 console.log(newPerson);
 
@@ -24,8 +34,12 @@ console.log(newPerson);
   Concatenate the two of them together using `.concat()`
 */
 
+const superHeroes = ['Batman', 'Superman', 'Wonder Woman'];
+const superVillans = ['Joker', 'Lex', 'Ares'];
+const combinedSupers = superHeroes.concat(superVillans);
+
 console.log(superHeroes);
-console.log(superVillains);
+console.log(superVillans);
 console.log(combinedSupers);
 
 /* Problem 3
